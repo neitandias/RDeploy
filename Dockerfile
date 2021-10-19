@@ -1,5 +1,7 @@
 FROM python:3.9-slim-bullseye
 
+RUN rm -rf /app/*
+
 WORKDIR /app/
 
 RUN echo deb http://http.us.debian.org/debian/ testing non-free contrib main > /etc/apt/sources.list \
