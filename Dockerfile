@@ -1,6 +1,6 @@
 FROM python:3.9-slim-bullseye
 
-WORKDIR /userbot/
+WORKDIR /app/
 
 RUN echo deb http://http.us.debian.org/debian/ testing non-free contrib main > /etc/apt/sources.list \
     && apt-get update
