@@ -45,6 +45,8 @@ ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
+RUN RUN pip install -r requirements.txt
+
 RUN git clone https://github.com/fnixdev/Kanna-X .
 
 RUN python3 -m pip install -U \
